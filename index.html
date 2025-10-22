@@ -48,19 +48,24 @@
         <div class="modal">
           <div class="modal1">
           <p class="modal1p1">Leave your contacts and we will call you back</p>
-              <form>
-                
+              <form class="open">
+                <label class="name">
             <span>Name </span><br>
-            <div style="position: relative;">
-            <input type="text" name="name" required /><svg class="icon icon-formname"><use xlink:href="./images/SVG-sprite/symbol-defs.svg#icon-formname"></use></svg>
-            </div> <br>
+            <div class="namea">
+            <input type="text" name="name" required autofocus /> <svg class="icon icon-formname"><use xlink:href="./images/SVG-sprite/symbol-defs.svg#icon-formname"></use></svg>
+            </div> 
+            </label><br>
             <span>Phone </span><br>
-            <input type="tel" name="tel" required /> <br>
+            <div>
+            <input type="number" name="tel" required />
+            </div> <br>
             <span>Email</span><br>
-            <input type="email" name="email" required /> <br>
+            <div>
+            <input type="email" name="email" required /> 
+            </div><br>
              <span>Comment</span><br>
             <textarea name="" id="" placeholder="Text input"></textarea><br>
-           <input type="checkbox"><span>I accept the terms and conditions of the Privacy Policy</span>
+           <input type="checkbox"><span>I accept the terms and conditions of the <span class="privacy">Privacy Policy</span></span>
             <button type="submit">Send</button> <br>
 
 
@@ -506,9 +511,19 @@
                       ></use>
                     </svg>
                   </div>
+                  </ul>
                 </li>
               </ul>
            </li>
+
+        <li>
+          <form class="footerform">
+            <span>Subscribe</span>
+            <input class="footemail" type="e-mail" name="email" placeholder="Email" />
+            <button>Subscribe</button>
+        </form>
+      </li>
+
         </ul>
       </footer>
   </body>
