@@ -47,6 +47,13 @@
       <main>
         <div class="isopen">
           <div class="openflex">
+            <div class="closesvg">
+              <svg class="icon icon-close">
+                <use
+                  xlink:href="./images/SVG-sprite/symbol-defs.svg#icon-close"
+                ></use>
+              </svg>
+            </div>
             <h3>Leave your contacts and we will call you back</h3>
             <form>
               <div class="forum3">
@@ -65,7 +72,7 @@
                 <div class="tela">
                   <p>Phone</p>
                   <label class="fromtel">
-                    <input type="number" name="tel" required /><svg
+                    <input type="number" name="tel" /><svg
                       class="icon icon-formtel"
                     >
                       <use
@@ -78,7 +85,7 @@
                 <div class="emaila">
                   <p>Email</p>
                   <label class="formemail">
-                    <input type="text" name="email" required /><svg
+                    <input type="email" name="email" required /><svg
                       class="icon icon-formemail"
                     >
                       <use
@@ -90,19 +97,26 @@
 
                 <div>
                   <p>Comment</p>
-                  <textarea
-                    name="textarea"
-                    id="textarea"
-                    placeholder="Text input"
-                  ></textarea
-                  ><br />
+                  <label class="mesaj">
+                    <input
+                      type="text"
+                      name="textarea"
+                      placeholder="Text input"
+                      required
+                    />
+                  </label>
                 </div>
               </div>
-              <input type="checkbox" /><span class="accept"
-                >I accept the terms and conditions of the
-                <span class="privacy">Privacy Policy</span></span
-              ><br />
-              <button type="submit">Send</button> <br />
+              <div class="checkboxdiv">
+                <input type="checkbox" />
+                <p class="accept">
+                  I accept the terms and conditions of the
+                  <span class="privacy">Privacy Policy</span>
+                </p>
+              </div>
+              <div class="sendi">
+                <button type="submit">Send</button>
+              </div>
             </form>
           </div>
         </div>
