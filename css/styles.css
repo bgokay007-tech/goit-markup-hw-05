@@ -154,7 +154,7 @@ align-items: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: rgba(46, 47, 66, 1);
-    padding-top: 72px;
+    padding-top: 24px;
     padding-left: 24px;
     padding-right: 24px;
     width: 360px;
@@ -180,13 +180,16 @@ align-items: center;
 }
 .closesvg {position: relative;
 padding-top: 24px;
+padding-bottom: 24px;
 padding-left: 360px;
 padding-right: 24px;}
-.icon-close {
+
+.icon-close {border-radius: 4px;
   position: absolute;
   width: 24px;
   height: 24px;
-  background-color: rgba(231, 233, 252, 1);
+  box-sizing: border-box;
+ background-color: rgba(231, 233, 252, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .formname{position: relative;
@@ -242,17 +245,28 @@ position: absolute; }
   padding-left: 38px;
 }
 
-.mesaj input {padding-left: 16px;
-  padding-top: 4px;}
-.mesaj input[type="text"] {width: 360px;
+
+textarea {width: 360px;
 height: 120px;
 border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 4px;
 box-sizing: border-box;
+padding-top: 8px;
+padding-left: 16px;
+
+
 }
-.mesaj input[type="text"]::placeholder {padding-top: 4px;
-  padding-left: 0px;
-}
+
+textarea::placeholder {color: rgba(46, 47, 66, 0.4);
+  font-family: roboto, sans-serif;
+  font-size: 12px;
+  font-style: regular;
+  line-height: 14px; 
+  letter-spacing: 0.04em;
+  font-weight: 400px;
+width: 57px;
+  height: 14px;}
+
 
 input[type="checkbox"] {
   width: 16px;
@@ -304,8 +318,6 @@ button [type="submit"] {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  
-
 }
 .sendi button {border: 1px solid rgba(77, 90, 229, 1);
 box-sizing: border-box;
