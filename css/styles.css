@@ -186,12 +186,19 @@ width: 24px;
 height: 24px;
 border-radius: 50%;
 }
+.closesvg1:hover {background-color: rgba(64, 75, 191, 1);
+  }
+    .closesvg1:hover .icon-blackclose {
+      fill: rgba(255, 255, 255, 1);
+    }
 .icon-blackclose {
   position: absolute;
   width: 8px;
   height: 8px;
   padding-top: 8px;
   padding-left: 8px;}
+
+  
 .formname{position: relative;
 }
 
@@ -201,15 +208,20 @@ position: absolute;
 width: 12px;
   height: 12px;
 }
-.icon-formnameasli :hover{fill:rgba(77, 90, 229, 1);}
+
 
 .formname input[type="text"] {border: 1px solid rgba(46, 47, 66, 0.4);
   box-sizing: border-box;
   border-radius: 4px;
   width: 360px;
     height: 40px;
+    outline: none;
 }
-.formname input[type="text"]:hover {border: 1px solid rgba(77, 90, 229, 1);}
+.formname input[type="text"]:focus + .icon-formnameasli {
+    fill: rgba(77, 90, 229, 1);
+  }
+.formname input[type="text"]:focus {border: 1px solid rgba(77, 90, 229, 1);}
+
 .formname input {padding-left: 38px;}
 
 .fromtel {position: relative;
@@ -220,17 +232,22 @@ top: 3px;
 position: absolute; 
 width: 13px;
   height: 13px;}
+  
 
-.fromtel input[type="number"] {
+.fromtel input[type="number"] {outline: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   box-sizing: border-box;
   border-radius: 4px;
   width: 360px;
     height: 40px;
-}
-.fromtel input[type="number"]:hover {
+} 
+.fromtel input[type="number"]:focus + .icon-formtelasli {
+    fill: rgba(77, 90, 229, 1);
+  }
+.fromtel input[type="number"]:focus{
   border: 1px solid rgba(77, 90, 229, 1);
 }
+
 .fromtel input {padding-left: 38px;}
 
 .formemail {
@@ -246,17 +263,20 @@ width: 13px;
  
 }
 
-.formemail input[type="email"] {
+
+.formemail input[type="email"] {outline: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   box-sizing: border-box;
   border-radius: 4px;
   width: 360px;
     height: 40px;
 }
-.formemail input[type="email"]:hover {
+.formemail input[type="email"]:focus {
   border: 1px solid rgba(77, 90, 229, 1);
 }
-
+.formemail input[type="email"]:focus + .icon-formemailasli {
+    fill: rgba(77, 90, 229, 1);
+  }
 .formemail input {
   padding-left: 38px;
 }
